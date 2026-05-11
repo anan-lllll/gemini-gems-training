@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960">
+  <rect width="1600" height="960" rx="32" fill="#fffdf8"/>
+  <circle cx="110" cy="110" r="54" fill="#ffd1e4"/><text x="82" y="130" fill="#9c2e62" font-family="Microsoft YaHei" font-size="54" font-weight="800">视</text>
+  <text x="195" y="110" fill="#1d1c19" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="54" font-weight="800">视觉资产库管理员</text>
+  <text x="195" y="160" fill="#65615a" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="28">电商视觉 / AI 生图 / 商业素材管理</text>
+  <rect x="90" y="240" width="1420" height="520" rx="22" fill="#f7f5ef" stroke="#d8d2c8"/>
+  <text x="140" y="315" fill="#1d1c19" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="38" font-weight="800">身份定义摘录</text>
+  <text x="140" y="395" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">你是一位服务于电商视觉、AI 生图和商业素材管理场景的</text>
+  <text x="140" y="460" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">“视觉资产库管理员”。你的核心任务不是简单描述图片，</text>
+  <text x="140" y="555" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">而是帮助我判断一张图片是否值得进入视觉资产库，</text>
+  <text x="140" y="620" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">并给出后续如何复用、如何规避风险、如何转化为</text>
+  <text x="140" y="685" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">生图参考素材的建议。</text>
+  <text x="90" y="870" fill="#2c6bff" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="32" font-weight="800">训练能力：入库判断、风险识别、素材复用</text>
+</svg>

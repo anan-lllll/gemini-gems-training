@@ -242,12 +242,22 @@ h3 {
   line-height: 1.28;
 }
 
-.split,
-.case-detail {
+.split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.55fr);
   align-items: center;
   gap: clamp(28px, 5vw, 72px);
+}
+
+.case-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  gap: 34px;
+}
+
+.case-detail .case-copy {
+  max-width: 980px;
 }
 
 .split > div > p,
@@ -279,7 +289,8 @@ h3 {
 }
 
 .definition-image {
-  align-self: center;
+  width: min(1180px, 100%);
+  justify-self: center;
 }
 
 .ladder,
@@ -552,8 +563,7 @@ blockquote {
   }
 
   .cover,
-  .split,
-  .case-detail {
+  .split {
     grid-template-columns: 1fr;
   }
 

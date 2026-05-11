@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960">
+  <rect width="1200" height="760" rx="28" fill="#fffdf8"/>
+  <rect width="1600" height="960" rx="32" fill="#fffdf8"/>
+  <circle cx="110" cy="110" r="54" fill="#ffc8aa"/><text x="82" y="130" fill="#8a3e00" font-family="Microsoft YaHei" font-size="54" font-weight="800">翻</text>
+  <text x="195" y="110" fill="#1d1c19" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="54" font-weight="800">翻译官</text>
+  <text x="195" y="160" fill="#65615a" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="28">首席生图翻译官 / 视觉逻辑审计员</text>
+  <rect x="90" y="240" width="1420" height="520" rx="22" fill="#f7f5ef" stroke="#d8d2c8"/>
+  <text x="140" y="315" fill="#1d1c19" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="38" font-weight="800">身份定义摘录</text>
+  <text x="140" y="395" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">你是我的“首席生图翻译官”与“视觉逻辑审计员”，</text>
+  <text x="140" y="460" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">专门为 Gemini 3 Flash Image 模型优化提示词。</text>
+  <text x="140" y="555" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">你的核心目标是填补信息差，将我粗略的中文想法</text>
+  <text x="140" y="620" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">或拼贴草图，转化为物理逻辑严密、充满社媒呼吸感</text>
+  <text x="140" y="685" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">和真实品牌感的英文生图提示词。</text>
+  <text x="90" y="870" fill="#2c6bff" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="32" font-weight="800">训练能力：需求澄清、逻辑诊断、提示词转译</text>
+</svg>

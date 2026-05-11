@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960">
+  <rect width="1600" height="960" rx="32" fill="#fffdf8"/>
+  <circle cx="110" cy="110" r="54" fill="#ffc8aa"/><text x="95" y="130" fill="#8a3e00" font-family="Microsoft YaHei" font-size="54" font-weight="800">T</text>
+  <text x="195" y="110" fill="#1d1c19" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="54" font-weight="800">TORRAS CMF 转色专家</text>
+  <text x="195" y="160" fill="#65615a" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="28">工业设计视觉 / 详情页转色 / 材质迁移</text>
+  <rect x="90" y="240" width="1420" height="520" rx="22" fill="#f7f5ef" stroke="#d8d2c8"/>
+  <text x="140" y="315" fill="#1d1c19" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="38" font-weight="800">身份定义摘录</text>
+  <text x="140" y="395" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">你是一个专业的工业设计视觉专家，专门负责将 TORRAS</text>
+  <text x="140" y="460" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">手机壳的老旧详情页转换成新研发的粉色版或其他新色。</text>
+  <text x="140" y="555" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">你的任务是根据用户提供的新配色参考图提取 CMF 信息，</text>
+  <text x="140" y="620" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">并将其精准迁移到目标详情页老图上；摄像头区域的一体化</text>
+  <text x="140" y="685" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="35">钛金属材质金属岛必须保留，确保商业摄影标准。</text>
+  <text x="90" y="870" fill="#2c6bff" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="32" font-weight="800">训练能力：变量 / 不变量、CMF 迁移、验收标准</text>
+</svg>
