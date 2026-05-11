@@ -3,6 +3,9 @@ const modeToggle = document.getElementById("modeToggle");
 const printBtn = document.getElementById("printBtn");
 const progressText = document.getElementById("progressText");
 const slides = Array.from(document.querySelectorAll(".slide"));
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.querySelector(".lightbox-close");
 
 const savedMode = localStorage.getItem("gemDeckMode");
 if (savedMode === "dark") {
@@ -18,6 +21,26 @@ modeToggle.addEventListener("click", () => {
 });
 
 printBtn.addEventListener("click", () => window.print());
+
+document.querySelectorAll(".image-zoom").forEach((button) => {
+  button.addEventListener("click", () => {
+    lightboxImage.src = button.dataset.src;
+    lightboxImage.alt = button.dataset.alt || "";
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  lightboxImage.src = "";
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) closeLightbox();
+});
 
 function currentSlideIndex() {
   const viewportMid = window.scrollY + window.innerHeight * 0.45;
@@ -58,6 +81,9 @@ window.addEventListener("keydown", (event) => {
   if (event.key === "End") {
     event.preventDefault();
     goToSlide(slides.length - 1);
+  }
+  if (event.key === "Escape" && lightbox.classList.contains("open")) {
+    closeLightbox();
   }
 });
 

@@ -191,7 +191,10 @@
             打开案例链接
           </a>
         </div>
-        <img class="definition-image" src="./assets/def-translator.svg" alt="翻译官 Gem 定义截图" />
+        <button class="image-zoom" type="button" data-src="./assets/def-translator.svg" data-alt="翻译官 Gem 定义截图">
+          <img class="definition-image" src="./assets/def-translator.svg" alt="翻译官 Gem 定义截图" />
+          <span>点击放大查看</span>
+        </button>
       </section>
 
       <section id="case-asset" class="slide case-detail">
@@ -212,7 +215,10 @@
             打开案例链接
           </a>
         </div>
-        <img class="definition-image" src="./assets/def-asset.svg" alt="视觉资产库管理员 Gem 定义截图" />
+        <button class="image-zoom" type="button" data-src="./assets/def-asset.svg" data-alt="视觉资产库管理员 Gem 定义截图">
+          <img class="definition-image" src="./assets/def-asset.svg" alt="视觉资产库管理员 Gem 定义截图" />
+          <span>点击放大查看</span>
+        </button>
       </section>
 
       <section id="case-cmf" class="slide case-detail">
@@ -238,7 +244,10 @@
             </a>
           </div>
         </div>
-        <img class="definition-image" src="./assets/def-cmf.svg" alt="TORRAS CMF 转色专家 Gem 定义截图" />
+        <button class="image-zoom" type="button" data-src="./assets/def-cmf.svg" data-alt="TORRAS CMF 转色专家 Gem 定义截图">
+          <img class="definition-image" src="./assets/def-cmf.svg" alt="TORRAS CMF 转色专家 Gem 定义截图" />
+          <span>点击放大查看</span>
+        </button>
       </section>
 
       <section id="case-wash" class="slide case-detail">
@@ -259,7 +268,10 @@
             打开 Gem
           </a>
         </div>
-        <img class="definition-image" src="./assets/def-wash.svg" alt="专业洗图大佬 Gem 定义截图" />
+        <button class="image-zoom" type="button" data-src="./assets/def-wash.svg" data-alt="专业洗图大佬 Gem 定义截图">
+          <img class="definition-image" src="./assets/def-wash.svg" alt="专业洗图大佬 Gem 定义截图" />
+          <span>点击放大查看</span>
+        </button>
       </section>
 
       <section id="case-work" class="slide case-detail">
@@ -359,9 +371,14 @@
     </main>
 
     <footer class="footer">
-      <span>蓝禾集团内部分享草案</span>
+      <span>蓝禾集团内部分享课件</span>
       <span id="progressText">1 / 12</span>
     </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="关闭放大图">关闭</button>
+      <img id="lightboxImage" src="" alt="" />
+    </div>
 
     <script src="./script.js"></script>
   </body>
