@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>从会问 AI 到会定义 AI 助手</title>
+    <meta
+      name="description"
+      content="蓝禾集团内部分享：用 Gemini Gems 训练需求判断、助手定义与 AI 工作流思维。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#cover" aria-label="回到封面">
+        <span class="brand-mark">G</span>
+        <span>Gemini Gems 内训</span>
+      </a>
+      <nav class="nav" aria-label="课件导航">
+        <a href="#why">主线</a>
+        <a href="#basic">基础</a>
+        <a href="#method">方法</a>
+        <a href="#cases">案例</a>
+        <a href="#workshop">共创</a>
+      </nav>
+      <div class="actions">
+        <button id="modeToggle" type="button" aria-label="切换深浅色">深色</button>
+        <button id="printBtn" type="button">打印/PDF</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="cover" class="slide cover">
+        <div class="cover-copy">
+          <p class="eyebrow">蓝禾集团内部分享 · 60 分钟</p>
+          <h1>从会问 AI<br />到会定义 AI 助手</h1>
+          <p class="lead">
+            用 Gemini Gems 训练需求判断、标准沉淀和助手定义能力。
+          </p>
+          <div class="cover-meta">
+            <span>正式分享 45-48 min</span>
+            <span>讨论交流 12-15 min</span>
+            <span>可迁移到 Codex / 自动化助手</span>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="课程核心">
+          <p class="panel-kicker">核心观点</p>
+          <p>
+            Gem 的价值不是让我们少思考，而是逼我们把自己怎么思考、
+            怎么判断、怎么验收写清楚。
+          </p>
+        </aside>
+      </section>
+
+      <section id="why" class="slide split">
+        <div>
+          <p class="eyebrow">01 / 为什么讲 Gem</p>
+          <h2>今天讲 Gem，真正讲的是“定义需求”</h2>
+          <p>
+            很多同事已经拥有 Gemini 会员，但使用方式仍然停留在临时问答。
+            这节课希望大家看到：真正提效的起点，不是记住更多功能，而是识别重复需求，
+            并把自己的判断标准写成一个可以复用的助手。
+          </p>
+        </div>
+        <div class="quote-card">
+          <p>普通提问解决一次问题。</p>
+          <p>定义助手解决一类问题。</p>
+        </div>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">02 / 能力进阶</p>
+        <h2>工具会升级，需求定义能力不会过时</h2>
+        <div class="ladder">
+          <article>
+            <span>1</span>
+            <h3>普通提问</h3>
+            <p>问一次，答一次。核心能力是把问题说出来。</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>写提示词</h3>
+            <p>把背景、约束、输出格式写清楚。</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>做 Gem</h3>
+            <p>把一类任务保存下来，沉淀成专属助手。</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>用 Codex / 自动化助手</h3>
+            <p>让 AI 参与更长流程，持续处理文件、项目和任务。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="basic" class="slide visual-slide">
+        <p class="eyebrow">03 / Gem 基础概念</p>
+        <h2>Gem 是被保存下来的工作判断流程</h2>
+        <p class="section-intro">
+          普通聊天需要每次重新解释背景，Gem 则把角色、任务、标准和输出结构预先写好。
+          所以它更适合反复出现、标准明确、需要稳定输出的任务。
+        </p>
+        <img class="teaching-image" src="./assets/gem-structure.svg" alt="Gem 的五层结构：角色、任务、背景、标准、输出" />
+      </section>
+
+      <section class="slide visual-slide">
+        <p class="eyebrow">04 / 创建步骤</p>
+        <h2>怎么在 Gemini 里建立一个自己的 Gem</h2>
+        <p class="section-intro">
+          创建 Gem 的重点不是按钮，而是先想清楚：这个助手要服务哪类重复需求，
+          它应该遵守什么标准，又应该按什么格式交付结果。
+        </p>
+        <img class="teaching-image" src="./assets/create-gem-steps.svg" alt="创建 Gem 的五个步骤" />
+      </section>
+
+      <section id="method" class="slide">
+        <p class="eyebrow">05 / 方法框架</p>
+        <h2>一个好 Gem 的 5 层结构</h2>
+        <div class="framework">
+          <div>
+            <strong>角色</strong>
+            <span>你是谁？</span>
+          </div>
+          <div>
+            <strong>任务</strong>
+            <span>你要完成什么？</span>
+          </div>
+          <div>
+            <strong>背景</strong>
+            <span>服务什么业务、产品、人群？</span>
+          </div>
+          <div>
+            <strong>标准</strong>
+            <span>什么叫好，什么不能做？</span>
+          </div>
+          <div>
+            <strong>输出</strong>
+            <span>按什么结构交付？</span>
+          </div>
+        </div>
+        <p class="note">
+          搭 Gem 的过程，就是逼自己回答：我到底在重复处理什么需求？
+          我判断好坏的标准是什么？我希望 AI 按什么流程帮我做？
+        </p>
+      </section>
+
+      <section id="cases" class="slide">
+        <p class="eyebrow">06 / 案例地图</p>
+        <h2>四类案例，训练四种能力</h2>
+        <div class="case-grid">
+          <a class="case-card rose" href="#case-translator">
+            <span>翻译官</span>
+            <h3>需求澄清</h3>
+            <p>把抽象想法转成可执行生图提示词。</p>
+          </a>
+          <a class="case-card blue" href="#case-asset">
+            <span>视觉资产库管理员</span>
+            <h3>判断标准</h3>
+            <p>判断图片是否值得入库，拆解可复用元素。</p>
+          </a>
+          <a class="case-card green" href="#case-cmf">
+            <span>CMF / 改色</span>
+            <h3>变量与不变量</h3>
+            <p>先建立规则，再批量执行转色。</p>
+          </a>
+          <a class="case-card amber" href="#case-work">
+            <span>工作助手</span>
+            <h3>跨岗位迁移</h3>
+            <p>从周报提炼会议材料和资源诉求。</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="case-translator" class="slide case-detail">
+        <div class="case-copy">
+          <p class="eyebrow">案例 1 / 翻译官</p>
+          <h2>它真正翻译的不是语言，而是需求</h2>
+          <p>
+            这个 Gem 的价值不在于“中译英”，而在于把设计师或业务方的抽象想法，
+            转译成模型能理解、能执行、能检查的视觉方案。
+          </p>
+          <ul>
+            <li>先指出“日系大男孩”“时尚感”等模糊词的风险。</li>
+            <li>把“肩膀壮阔”改写成更可控的视觉语言。</li>
+            <li>用苏格拉底提问法确认服装子风格、发型和场景光影。</li>
+            <li>最后输出可直接用于生图的英文 Prompt。</li>
+          </ul>
+          <a class="link-btn" href="https://gemini.google.com/u/1/gem/0ae1245f90f4/cbe4406520dbd7d8" target="_blank" rel="noreferrer">
+            打开案例链接
+          </a>
+        </div>
+        <img class="definition-image" src="./assets/def-translator.svg" alt="翻译官 Gem 定义截图" />
+      </section>
+
+      <section id="case-asset" class="slide case-detail">
+        <div class="case-copy">
+          <p class="eyebrow">案例 2 / 视觉资产库管理员</p>
+          <h2>把个人判断标准，变成团队可复用流程</h2>
+          <p>
+            这个案例适合作为主展示：上传一张户外生活方式图后，
+            Gem 给出入库结论、图片核心价值、可复用元素、风险限制、资产标签和生图转化提示。
+          </p>
+          <div class="mini-table">
+            <div><strong>入库结论</strong><span>建议入库 · A 级</span></div>
+            <div><strong>核心价值</strong><span>自然交互感，高质量 UGC 感</span></div>
+            <div><strong>可复用元素</strong><span>姿势、构图、服装、光线、生活方式氛围</span></div>
+            <div><strong>风险限制</strong><span>MagSafe 外观、机型指向、肖像授权</span></div>
+          </div>
+          <a class="link-btn" href="https://gemini.google.com/u/1/gem/7bcbf300bd91/e38b4cfff1e2719c" target="_blank" rel="noreferrer">
+            打开案例链接
+          </a>
+        </div>
+        <img class="definition-image" src="./assets/def-asset.svg" alt="视觉资产库管理员 Gem 定义截图" />
+      </section>
+
+      <section id="case-cmf" class="slide case-detail">
+        <div class="case-copy">
+          <p class="eyebrow">案例 3 / CMF 与详情页改色</p>
+          <h2>好 Gem 的关键：先建立规则，再执行</h2>
+          <p>
+            CMF 和详情页改色案例可以合并讲。它们共同训练的是“变量与不变量”的意识：
+            产品结构、构图、材质光影不动，只调整目标颜色、版式色块和指定视觉变量。
+          </p>
+          <ul>
+            <li>先配置颜色规则：原始颜色、目标颜色、参考图。</li>
+            <li>提取目标色特征：色相、饱和度、明度和材质感。</li>
+            <li>明确结构不变、细节保留、非目标区域不污染。</li>
+            <li>每次批量处理后给出核对点。</li>
+          </ul>
+          <div class="link-row">
+            <a class="link-btn" href="https://gemini.google.com/share/0aea0f5555e8" target="_blank" rel="noreferrer">
+              详情页改色
+            </a>
+            <a class="link-btn secondary" href="https://gemini.google.com/share/b187f0b1e548" target="_blank" rel="noreferrer">
+              CMF 转色
+            </a>
+          </div>
+        </div>
+        <img class="definition-image" src="./assets/def-cmf.svg" alt="TORRAS CMF 转色专家 Gem 定义截图" />
+      </section>
+
+      <section id="case-wash" class="slide case-detail">
+        <div class="case-copy">
+          <p class="eyebrow">案例 4 / 专业洗图大佬</p>
+          <h2>视觉类 Gem 的关键：边界条件</h2>
+          <p>
+            这个 Gem 适合讲视觉安全和商业可用。它不是简单“修好看”，
+            而是在保留参考图原生气质的前提下，明确哪些要保留、哪些要替换、哪些风险要规避。
+          </p>
+          <ul>
+            <li>保留：年龄段、整体穿搭风格、姿势气质。</li>
+            <li>替换：可识别肖像、发型脸部细节、品牌标志。</li>
+            <li>规避：Logo、版权图案、过度相似的服装结构。</li>
+            <li>验收：可商用、符合大众审美、没有明显侵权风险。</li>
+          </ul>
+          <a class="link-btn" href="https://gemini.google.com/u/1/gem/a19e20496c74" target="_blank" rel="noreferrer">
+            打开 Gem
+          </a>
+        </div>
+        <img class="definition-image" src="./assets/def-wash.svg" alt="专业洗图大佬 Gem 定义截图" />
+      </section>
+
+      <section id="case-work" class="slide case-detail">
+        <div class="case-copy">
+          <p class="eyebrow">补充案例 / 工作助手</p>
+          <h2>Gem 不只适合视觉岗，也适合管理和协作</h2>
+          <p>
+            有一个案例实际是组长例会资料整理：用户把两周周报发给 Gem，
+            它提炼出项目进度、挑战问题、下阶段规划和资源诉求。
+          </p>
+          <ul>
+            <li>把流水账周报整理成会议发言大纲。</li>
+            <li>把“做了什么”提升为“进度、风险、资源”。</li>
+            <li>适合向非视觉岗同事说明 Gem 的迁移价值。</li>
+          </ul>
+          <a class="link-btn" href="https://gemini.google.com/u/1/gem/8840fe029b2f/3bf7060d60ffbfba" target="_blank" rel="noreferrer">
+            打开案例链接
+          </a>
+        </div>
+        <div class="output-card">
+          <h3>它展示的是迁移能力</h3>
+          <p>
+            视觉案例是入口，但“重复需求 → 判断标准 → 输出结构”的方法可以迁移到会议、汇报、管理和协作任务。
+          </p>
+        </div>
+      </section>
+
+      <section id="workshop" class="slide">
+        <p class="eyebrow">07 / 讨论交流</p>
+        <h2>让大家带走 3 个问题</h2>
+        <div class="question-list">
+          <article>
+            <span>01</span>
+            <p>我工作里有哪些需求总是在重复出现？</p>
+          </article>
+          <article>
+            <span>02</span>
+            <p>我判断这件事好坏的标准是什么？</p>
+          </article>
+          <article>
+            <span>03</span>
+            <p>如果让 AI 先帮我做一步，最值得交给它的是哪一步？</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="links" class="slide">
+        <p class="eyebrow">附录 / 案例链接库</p>
+        <h2>课后可以继续打开看的案例</h2>
+        <div class="link-library">
+          <a href="https://gemini.google.com/u/1/gem/0ae1245f90f4/cbe4406520dbd7d8" target="_blank" rel="noreferrer">
+            <strong>翻译官 / 需求转译</strong>
+            <span>抽象视觉需求、逻辑诊断、苏格拉底提问、生图 Prompt。</span>
+          </a>
+          <a href="https://gemini.google.com/u/1/gem/7bcbf300bd91/e38b4cfff1e2719c" target="_blank" rel="noreferrer">
+            <strong>视觉资产库管理员</strong>
+            <span>素材入库判断、可复用元素拆解、风险限制、资产标签。</span>
+          </a>
+          <a href="https://gemini.google.com/share/0aea0f5555e8" target="_blank" rel="noreferrer">
+            <strong>详情页全效改色专家</strong>
+            <span>颜色规则配置、结构不变、材质光影保留。</span>
+          </a>
+          <a href="https://gemini.google.com/share/b187f0b1e548" target="_blank" rel="noreferrer">
+            <strong>TORRAS CMF 转色专家</strong>
+            <span>参考图建基准、批量转色、持续核对主色和材质。</span>
+          </a>
+          <a href="https://gemini.google.com/u/1/gem/a19e20496c74" target="_blank" rel="noreferrer">
+            <strong>专业洗图大佬</strong>
+            <span>视觉安全、特征置换、版权风险规避、商业可用重构。</span>
+          </a>
+          <a href="https://gemini.google.com/u/1/gem/8840fe029b2f/3bf7060d60ffbfba" target="_blank" rel="noreferrer">
+            <strong>工作助手 / 会议资料整理</strong>
+            <span>从周报提炼组长例会资料，适合展示跨岗位迁移。</span>
+          </a>
+          <a href="https://gemini.google.com/u/1/gem/624c70b92c20/dd98b53e0b263725" target="_blank" rel="noreferrer">
+            <strong>模特资产标准化案例</strong>
+            <span>版权查验、模特资产报告、人物 Prompt 提取、参考资产图。</span>
+          </a>
+          <a href="https://gemini.google.com/u/1/app/fb060a8f0026f9f6" target="_blank" rel="noreferrer">
+            <strong>补充对话案例</strong>
+            <span>保留为备用链接，正式发布前可再补充截图或说明。</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="slide closing">
+        <p class="eyebrow">结束页</p>
+        <h2>普通提问解决一次问题，定义助手解决一类问题</h2>
+        <p>
+          AI 的价值不只是“它能回答我什么”，而是我们能不能把自己的经验、
+          标准和流程教给它，让它反复帮我们处理同一类任务。
+        </p>
+        <p>
+          今天从 Gem 开始练习，是为了以后能更自然地使用 Codex 或更强的 AI 自动化助手。
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>蓝禾集团内部分享草案</span>
+      <span id="progressText">1 / 12</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

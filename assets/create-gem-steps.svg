@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+  <rect width="1400" height="920" fill="#fffdf8"/>
+  <text x="80" y="88" fill="#1d1c19" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="42" font-weight="800">怎么创建一个自己的 Gem？</text>
+  <text x="80" y="140" fill="#65615a" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="24">以 Gemini 网页版为例，重点不是按钮，而是把你的重复需求写清楚。</text>
+  <g font-family="Microsoft YaHei, PingFang SC, Arial">
+    <g transform="translate(80 220)">
+      <circle cx="40" cy="40" r="40" fill="#2c6bff"/><text x="29" y="53" fill="#fff" font-size="34" font-weight="800">1</text>
+      <text x="110" y="33" fill="#1d1c19" font-size="30" font-weight="800">打开 Gemini 左侧栏</text>
+      <text x="110" y="76" fill="#65615a" font-size="22">点击「Gem」或进入 Gem 管理器。</text>
+    </g>
+    <g transform="translate(80 350)">
+      <circle cx="40" cy="40" r="40" fill="#2c6bff"/><text x="28" y="53" fill="#fff" font-size="34" font-weight="800">2</text>
+      <text x="110" y="33" fill="#1d1c19" font-size="30" font-weight="800">新建 Gem</text>
+      <text x="110" y="76" fill="#65615a" font-size="22">给它起一个能说明用途的名字，不要只叫“助手”。</text>
+    </g>
+    <g transform="translate(80 480)">
+      <circle cx="40" cy="40" r="40" fill="#2c6bff"/><text x="28" y="53" fill="#fff" font-size="34" font-weight="800">3</text>
+      <text x="110" y="33" fill="#1d1c19" font-size="30" font-weight="800">写身份定义</text>
+      <text x="110" y="76" fill="#65615a" font-size="22">写清楚角色、任务、背景、标准、输出格式。</text>
+    </g>
+    <g transform="translate(80 610)">
+      <circle cx="40" cy="40" r="40" fill="#2c6bff"/><text x="28" y="53" fill="#fff" font-size="34" font-weight="800">4</text>
+      <text x="110" y="33" fill="#1d1c19" font-size="30" font-weight="800">预览并测试</text>
+      <text x="110" y="76" fill="#65615a" font-size="22">用一条真实需求测试它，观察输出是否稳定。</text>
+    </g>
+    <g transform="translate(80 740)">
+      <circle cx="40" cy="40" r="40" fill="#2c6bff"/><text x="28" y="53" fill="#fff" font-size="34" font-weight="800">5</text>
+      <text x="110" y="33" fill="#1d1c19" font-size="30" font-weight="800">根据输出反向修改定义</text>
+      <text x="110" y="76" fill="#65615a" font-size="22">它哪里跑偏，就把标准、禁区或输出结构补进去。</text>
+    </g>
+  </g>
+  <rect x="850" y="240" width="430" height="520" rx="28" fill="#f7f5ef" stroke="#d8d2c8"/>
+  <text x="900" y="310" fill="#1d1c19" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="30" font-weight="800">创建前先问自己</text>
+  <text x="900" y="380" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="24">1. 这件事是否反复发生？</text>
+  <text x="900" y="440" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="24">2. 我判断好坏的标准是什么？</text>
+  <text x="900" y="500" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="24">3. 哪些地方不能让 AI 乱改？</text>
+  <text x="900" y="560" fill="#3b3935" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="24">4. 最终要交付什么格式？</text>
+  <text x="900" y="660" fill="#65615a" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="22">先定义清楚需求，</text>
+  <text x="900" y="700" fill="#65615a" font-family="Microsoft YaHei, PingFang SC, Arial" font-size="22">再让 AI 执行。</text>
+</svg>
